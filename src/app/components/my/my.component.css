@@ -1,0 +1,12 @@
+div {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    margin-left: 10px;
+}
