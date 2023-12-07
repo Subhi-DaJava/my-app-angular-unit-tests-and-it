@@ -1,0 +1,9 @@
+<div>
+    <h2>{{ title }}</h2>
+    <button (click)="emitTitle()">Click me</button>
+    <input type="text" [(ngModel)]="title">
+    {{ emitedTitle }}
+
+    <div *ngIf="errorMessage">
+        <h3>{{errorMessage}}</h3>
+  </div>

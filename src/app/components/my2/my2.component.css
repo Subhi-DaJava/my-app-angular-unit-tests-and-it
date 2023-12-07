@@ -1,0 +1,13 @@
+div {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  h2 {
+    color: #333;
+  }
+
+  button {
+    padding: 10px;
+    cursor: pointer;
+  }
