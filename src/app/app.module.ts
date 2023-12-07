@@ -10,6 +10,7 @@ import { My4Component } from './components/my4/my4.component';
 import { My5Component } from './components/my5/my5.component';
 import { My6Component } from './components/my6/my6.component';
 import { HttpClientModule } from '@angular/common/http';
+import { My7Component } from './components/my7/my7.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     My3Component,
     My4Component,
     My5Component,
-    My6Component
+    My6Component,
+    My7Component
   ],
   imports: [
     BrowserModule,
