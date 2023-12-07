@@ -3,6 +3,7 @@ import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { MyComponent } from './components/my/my.component';
 import { FormsModule } from '@angular/forms';
+import { My3Component } from './components/my3/my3.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -10,7 +11,8 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         MyComponent,
-        My2Component
+        My2Component,
+        My3Component
       ],
       imports: [FormsModule]
     }).compileComponents();
