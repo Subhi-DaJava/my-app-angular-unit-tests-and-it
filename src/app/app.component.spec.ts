@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { MyComponent } from './components/my/my.component';
 import { FormsModule } from '@angular/forms';
 import { My3Component } from './components/my3/my3.component';
+import { My4Component } from './components/my4/my4.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -12,7 +13,8 @@ describe('AppComponent', () => {
         AppComponent,
         MyComponent,
         My2Component,
-        My3Component
+        My3Component,
+        My4Component
       ],
       imports: [FormsModule]
     }).compileComponents();
