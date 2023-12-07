@@ -10,6 +10,7 @@ import { My6Component } from './components/my6/my6.component';
 import { HttpClientModule } from '@angular/common/http';
 import { My7Component } from './components/my7/my7.component';
 import { My8Component } from './components/my8/my8.component';
+import { My9Component } from './components/my9/my9.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -23,7 +24,8 @@ describe('AppComponent', () => {
         My5Component,
         My6Component,
         My7Component,
-        My8Component
+        My8Component,
+        My9Component
       ],
       imports: [FormsModule, 
         ReactiveFormsModule,
