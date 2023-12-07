@@ -1,4 +1,8 @@
 module.exports = {
+    moduleNameMapper: {
+        '^src/(.*)$': '<rootDir>/src/$1',
+        '@core/(.*)': '<rootDir>/src/app/core/$1'
+      },
     preset: 'jest-preset-angular',
     roots: ['<rootDir>'],
     testMatch: ['**/+(*.)+(spec).+(ts)'],

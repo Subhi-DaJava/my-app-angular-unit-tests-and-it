@@ -1,0 +1,9 @@
+<div class="getData">
+    <button (click)="fetchData()">Fetch Data</button>
+</div>
+<div *ngIf="data">
+    {{ data | json }}
+    <div *ngIf="errorMessage">
+        <p class="errorMeassage">{{ errorMessage }}</p>
+    </div>
+</div>
