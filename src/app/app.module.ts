@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { MyComponent } from './components/my/my.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { My2Component } from './components/my2/my2.component';
 import { My3Component } from './components/my3/my3.component';
 import { My4Component } from './components/my4/my4.component';
 import { My5Component } from './components/my5/my5.component';
+import { My6Component } from './components/my6/my6.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,14 @@ import { My5Component } from './components/my5/my5.component';
     My2Component,
     My3Component,
     My4Component,
-    My5Component
+    My5Component,
+    My6Component
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
