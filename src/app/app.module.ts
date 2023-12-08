@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { My7Component } from './components/my7/my7.component';
 import { My8Component } from './components/my8/my8.component';
 import { My9Component } from './components/my9/my9.component';
+import { HomeComponent } from './component-test-without-testbed/home/home.component';
+import { HomeTestbedComponent } from './component-test-without-testbed/home-testbed/home-testbed.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { My9Component } from './components/my9/my9.component';
     My6Component,
     My7Component,
     My8Component,
-    My9Component
+    My9Component,
+    HomeComponent,
+    HomeTestbedComponent
   ],
   imports: [
     BrowserModule,
