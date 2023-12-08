@@ -4,7 +4,7 @@ import { MyFeatureChildComponent } from '../my-feature/my-feature-child.componen
 import { UserChildService } from '../serives/user-service/user-child.service';
 import { MyFeatureChildService } from '../serives/my-feature-service/my-feature-child.service';
 
-// With TestBed 
+// With TestBed
 /*
 <app-my-feature-child />
 should add the declaration for the my-feature component, and all services related to the my-parent component
@@ -32,7 +32,7 @@ class FakeMyFeatureService {
 class FakeUserService {
 
 }
-
+// Test with TestBed
 describe('MyParentComponent', () => {
   let component: MyParentComponent;
   let fixture: ComponentFixture<MyParentComponent>;

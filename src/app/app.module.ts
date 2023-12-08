@@ -18,6 +18,7 @@ import { HomeTestbedComponent } from './without-testbed/home-testbed/home-testbe
 import { MyFeatureComponent } from './without-testbed/test-without-testbed/my-features/my-feature/my-feature.component';
 import { MyParentComponent } from './without-testbed/test-without-testbed/child-parent/my-parent/my-parent.component';
 import { MyFeatureChildComponent } from './without-testbed/test-without-testbed/child-parent/my-feature/my-feature-child.component';
+import { DemoOneComponent } from './components/jest-demo/demo-one/demo-one.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { MyFeatureChildComponent } from './without-testbed/test-without-testbed/
     HomeTestbedComponent,
     MyFeatureComponent,
     MyParentComponent,
-    MyFeatureChildComponent
+    MyFeatureChildComponent,
+    DemoOneComponent
   ],
   imports: [
     BrowserModule,
