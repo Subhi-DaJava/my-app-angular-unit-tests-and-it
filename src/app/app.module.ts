@@ -19,12 +19,7 @@ import { MyFeatureComponent } from './without-testbed/test-without-testbed/my-fe
 import { MyParentComponent } from './without-testbed/test-without-testbed/child-parent/my-parent/my-parent.component';
 import { MyFeatureChildComponent } from './without-testbed/test-without-testbed/child-parent/my-feature/my-feature-child.component';
 import { DemoOneComponent } from './components/jest-demo/demo-one/demo-one.component';
-import {BookListComponent, BookListModule} from './cart-project/book/book-list/book-list.component';
-import { BooklistShallowComponent } from './cart-project/book/booklist-shallow/booklist-shallow.component';
-import { BookPreviewComponent } from './cart-project/book/book-preview/book-preview.component';
-import {Cart} from "./cart-project/cart/cart";
-import { CartComponent } from './cart-project/cart/cart/cart.component';
-import { ChecklistListComponent } from './check-list/checklist-list/checklist-list.component';
+import { BookListModule} from './cart-project/book/book-list/book-list.component';
 
 @NgModule({
   declarations: [
@@ -43,8 +38,7 @@ import { ChecklistListComponent } from './check-list/checklist-list/checklist-li
     MyFeatureComponent,
     MyParentComponent,
     MyFeatureChildComponent,
-    DemoOneComponent,
-    ChecklistListComponent
+    DemoOneComponent
   ],
   imports: [
     BrowserModule,

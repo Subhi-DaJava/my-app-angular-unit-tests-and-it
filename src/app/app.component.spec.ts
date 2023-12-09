@@ -14,10 +14,8 @@ import { My9Component } from './components/my9/my9.component';
 import { HomeComponent } from './without-testbed/home/home.component';
 import { HomeTestbedComponent } from './without-testbed/home-testbed/home-testbed.component';
 import { MyFeatureComponent } from './without-testbed/test-without-testbed/my-features/my-feature/my-feature.component';
-import {BookListComponent, BookListModule} from "./cart-project/book/book-list/book-list.component";
-import {BooklistShallowComponent} from "./cart-project/book/booklist-shallow/booklist-shallow.component";
+import { BookListModule } from "./cart-project/book/book-list/book-list.component";
 import {Cart} from "./cart-project/cart/cart";
-import {BookPreviewComponent} from "./cart-project/book/book-preview/book-preview.component";
 
 describe('AppComponent', () => {
   beforeEach(async () => {

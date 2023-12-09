@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let checklist of checklists" data-testid="checklist-item">
+    <button (click)="delete.emit(checklist.id)" data-testid="delete-checklist">Delete</button>
+  </li>
+</ul>
+<p *ngIf="!checklists.length" data-testid="no-checklists-message">
+  Click the add button to create a checklist !
+</p>
+

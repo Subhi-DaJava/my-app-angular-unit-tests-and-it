@@ -2,7 +2,7 @@ import {Component, Input, NgModule, OnInit} from '@angular/core';
 import {Book} from "../../cart/book";
 import {Cart} from "../../cart/cart";
 import {CommonModule} from "@angular/common";
-import {BookPreviewComponent, BookPreviewModule} from "../book-preview/book-preview.component";
+import {BookPreviewModule} from "../book-preview/book-preview.component";
 // SCAM: Single Angular Component Module, which declares and exports a single component.
 // create a ngModule for the BookListComponent
 @Component({
