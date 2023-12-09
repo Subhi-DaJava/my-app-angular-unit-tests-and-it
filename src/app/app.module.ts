@@ -19,6 +19,12 @@ import { MyFeatureComponent } from './without-testbed/test-without-testbed/my-fe
 import { MyParentComponent } from './without-testbed/test-without-testbed/child-parent/my-parent/my-parent.component';
 import { MyFeatureChildComponent } from './without-testbed/test-without-testbed/child-parent/my-feature/my-feature-child.component';
 import { DemoOneComponent } from './components/jest-demo/demo-one/demo-one.component';
+import {BookListComponent, BookListModule} from './cart-project/book/book-list/book-list.component';
+import { BooklistShallowComponent } from './cart-project/book/booklist-shallow/booklist-shallow.component';
+import { BookPreviewComponent } from './cart-project/book/book-preview/book-preview.component';
+import {Cart} from "./cart-project/cart/cart";
+import { CartComponent } from './cart-project/cart/cart/cart.component';
+import { ChecklistListComponent } from './check-list/checklist-list/checklist-list.component';
 
 @NgModule({
   declarations: [
@@ -37,14 +43,18 @@ import { DemoOneComponent } from './components/jest-demo/demo-one/demo-one.compo
     MyFeatureComponent,
     MyParentComponent,
     MyFeatureChildComponent,
-    DemoOneComponent
+    DemoOneComponent,
+    ChecklistListComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    // import the BookListModule for display the BookList in App Component view
+    BookListModule
   ],
+  // service not injectable in the root app, so we need to provide it in the app module
   providers: [],
   bootstrap: [AppComponent]
 })

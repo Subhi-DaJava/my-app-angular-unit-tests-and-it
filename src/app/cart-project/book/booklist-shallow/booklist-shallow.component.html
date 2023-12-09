@@ -1,0 +1,6 @@
+<div *ngFor="let book of bookList">
+<!--  <h2 data-role="book-title">{{ book.title }}</h2>-->
+<!--  afficher un book ailleurs,  book-preview existe pas -->
+  <app-book-preview [book]="book"></app-book-preview>
+  <button data-role="buy-button" (click)="addBook(book)">Buy</button>
+</div>
