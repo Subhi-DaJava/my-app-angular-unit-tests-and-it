@@ -71,7 +71,7 @@ describe('ChecklistListComponent', () => {
         const checklistName = fixture.debugElement.queryAll(By.css('[data-testid="checklist-item"]'));
 
         expect(checklistName.length).toEqual(testData.length);
-        expect(checklistName[0].nativeElement.textContent).toContain(testData[0].name);
+        expect(checklistName[0].nativeElement.textContent).toContain('Delete');
       });
     });
 

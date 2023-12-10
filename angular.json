@@ -75,13 +75,16 @@
           }
         },
         "test": {
-          "builder": "@angular-builders/jest:run",
+          "builder": "@angular-devkit/build-angular:jest",
           "options": {
             "polyfills": [
               "zone.js",
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
+            "include": [
+              "src/**/*.spec.ts"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"

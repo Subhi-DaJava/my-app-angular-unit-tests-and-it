@@ -1,0 +1,14 @@
+<!-- Ce code génère une liste de pagination où chaque page est un élément de liste.
+ Lorsqu'une page est sélectionnée, elle est stylisée différemment et la méthode selectPage est appelée.-->
+<ul class="pagination">
+  <li *ngFor="let page of pages"
+      class="page-item"
+      data-testid="page-container"
+      [ngClass]="{ active: page === currentPage }"
+      (click)="selectPage(page)"
+  >
+  <span class="page-link">
+    {{ page }}
+  </span>
+  </li>
+</ul>
