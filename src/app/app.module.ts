@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { MyComponent } from './components/my/my.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -20,6 +19,9 @@ import { MyParentComponent } from './without-testbed/test-without-testbed/child-
 import { MyFeatureChildComponent } from './without-testbed/test-without-testbed/child-parent/my-feature/my-feature-child.component';
 import { DemoOneComponent } from './components/jest-demo/demo-one/demo-one.component';
 import { BookListModule} from './cart-project/book/book-list/book-list.component';
+import { MatchersComponent } from './angular-jest-tuto/components/matchers/matchers.component';
+import { DataComponent } from './angular-jest-tuto/components/data/data.component';
+import { AsynchronousComponent } from './angular-jest-tuto/components/asynchronous/asynchronous.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,10 @@ import { BookListModule} from './cart-project/book/book-list/book-list.component
     MyFeatureComponent,
     MyParentComponent,
     MyFeatureChildComponent,
-    DemoOneComponent
+    DemoOneComponent,
+    MatchersComponent,
+    DataComponent,
+    AsynchronousComponent
   ],
   imports: [
     BrowserModule,
