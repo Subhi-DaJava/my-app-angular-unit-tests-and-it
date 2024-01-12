@@ -1,0 +1,7 @@
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="email" class="label">Votre email</label>
+        <input type="email" name="email" formControlName="email" id="email" class="input" placeholder="name@company.com" required="">
+    </div>
+    <button type="submit" class="button">Créer le compte</button>
+</form>

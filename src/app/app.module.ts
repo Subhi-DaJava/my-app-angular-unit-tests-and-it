@@ -23,6 +23,11 @@ import { MatchersComponent } from './angular-jest-tuto/components/matchers/match
 import { DataComponent } from './angular-jest-tuto/components/data/data.component';
 import { AsynchronousComponent } from './angular-jest-tuto/components/asynchronous/asynchronous.component';
 import { FolderNameModule } from './folder-unit-IT-tests/components/folderName-shallow-unit-tests/folder-name.component';
+import { MonComponent } from './mes-composants/mon-component/mon/mon.composant.component';
+import { MonOutputComponent } from './mes-composants/mon-component/output/mon-output/mon-output.component';
+import { MyUserComponent } from './mes-composants/mes-services/my-user/component/my-user.component';
+import { MyUsersComponent } from './mes-composants/mes-services/my-users/component/my-users.component';
+import { SignupComponent } from './mes-composants/mes-formulaires/sign-up/signup/signup.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +48,12 @@ import { FolderNameModule } from './folder-unit-IT-tests/components/folderName-s
     DemoOneComponent,
     MatchersComponent,
     DataComponent,
-    AsynchronousComponent
+    AsynchronousComponent,
+    MonComponent,
+    MonOutputComponent,
+    MyUserComponent,
+    MyUsersComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
