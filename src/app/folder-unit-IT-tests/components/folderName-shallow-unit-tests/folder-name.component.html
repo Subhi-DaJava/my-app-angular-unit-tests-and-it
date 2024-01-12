@@ -1,0 +1,5 @@
+<span *ngIf="folder" class="folder-name">
+    <custom-inline-edit data-testid="folder-title" [text]="folderTitle" (editConfirmed)="editTitleConfirmed($event)"
+        (canceled)="editFolderCanceled.emit($event)">
+    </custom-inline-edit>
+</span>

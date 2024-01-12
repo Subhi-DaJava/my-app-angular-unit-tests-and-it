@@ -22,7 +22,7 @@ import { BookListModule} from './cart-project/book/book-list/book-list.component
 import { MatchersComponent } from './angular-jest-tuto/components/matchers/matchers.component';
 import { DataComponent } from './angular-jest-tuto/components/data/data.component';
 import { AsynchronousComponent } from './angular-jest-tuto/components/asynchronous/asynchronous.component';
-
+import { FolderNameModule } from './folder-unit-IT-tests/components/folderName-shallow-unit-tests/folder-name.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +51,9 @@ import { AsynchronousComponent } from './angular-jest-tuto/components/asynchrono
     ReactiveFormsModule,
     HttpClientModule,
     // import the BookListModule for display the BookList in App Component view
-    BookListModule
+    BookListModule,
+    // import the FolderNameModule for display the FolderName in App Component view
+    FolderNameModule
   ],
   // service not injectable in the root app, so we need to provide it in the app module
   providers: [],

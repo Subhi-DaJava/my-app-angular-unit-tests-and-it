@@ -1,0 +1,6 @@
+<div>
+    <span *ngIf="!editing" >{{ text }}</span>
+    <input [(ngModel)]="editedText" />
+    <button (click)="editTitleConfirmEdit()">Confirm</button>
+    <button (click)="cancelEdit()">Cancel</button>
+</div>
